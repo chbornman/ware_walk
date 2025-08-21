@@ -9,7 +9,7 @@ const NavigationButtons = ({ currentSection, totalSections, onNavigate }) => {
       {canGoUp && (
         <button
           onClick={() => onNavigate('prev')}
-          className="fixed top-6 left-1/2 -translate-x-1/2 z-50 p-2 bg-neutral-900/80 backdrop-blur-sm rounded-full border border-neutral-700 hover:bg-neutral-800 hover:border-accent/50 transition-all duration-300 group animate-bounce"
+          className="fixed top-6 right-6 lg:right-8 xl:right-10 z-50 p-2 bg-neutral-900/80 backdrop-blur-sm rounded-full border border-neutral-700 hover:bg-neutral-800 hover:border-accent/50 transition-all duration-300 group animate-bounce"
           aria-label="Previous section"
         >
           <ChevronUpIcon className="w-5 h-5 text-neutral-300 group-hover:text-accent transition-colors" />
@@ -19,7 +19,7 @@ const NavigationButtons = ({ currentSection, totalSections, onNavigate }) => {
       {canGoDown && (
         <button
           onClick={() => onNavigate('next')}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 p-2 bg-neutral-900/80 backdrop-blur-sm rounded-full border border-neutral-700 hover:bg-neutral-800 hover:border-accent/50 transition-all duration-300 group animate-bounce"
+          className="fixed bottom-6 right-6 lg:right-8 xl:right-10 z-50 p-2 bg-neutral-900/80 backdrop-blur-sm rounded-full border border-neutral-700 hover:bg-neutral-800 hover:border-accent/50 transition-all duration-300 group animate-bounce"
           aria-label="Next section"
         >
           <ChevronDownIcon className="w-5 h-5 text-neutral-300 group-hover:text-accent transition-colors" />
