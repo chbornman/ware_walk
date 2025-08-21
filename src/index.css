@@ -36,4 +36,10 @@
   .text-gradient {
     @apply bg-gradient-bronze bg-clip-text text-transparent;
   }
+  
+  /* Fix for Leaflet map rendering */
+  .leaflet-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }

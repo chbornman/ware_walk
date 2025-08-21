@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Polyline, Marker, Popup } from 'react-leaflet';
 import { MapIcon, BuildingLibraryIcon, PaintBrushIcon, CameraIcon, ClockIcon } from '@heroicons/react/24/outline';
 import 'leaflet/dist/leaflet.css';
@@ -11,6 +12,24 @@ L.Icon.Default.mergeOptions({
 });
 
 const PathMap = () => {
+  const [mapKey, setMapKey] = useState(0);
+  
+  useEffect(() => {
+    // Force map to re-render after component mounts
+    const timer = setTimeout(() => {
+      setMapKey(prev => prev + 1);
+    }, 100);
+    
+    // Trigger resize event to fix rendering issues
+    const resizeTimer = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 200);
+    
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(resizeTimer);
+    };
+  }, []);
   // Ware Center - 42 N. Prince St, Lancaster, PA
   const wareCenter = [40.0398, -76.3067];
   const center = wareCenter;
@@ -71,10 +90,12 @@ const PathMap = () => {
           <div className="absolute -inset-4 bg-gradient-bronze opacity-10 blur-2xl group-hover:opacity-20 transition-opacity"></div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-neutral-200">
             <MapContainer 
+              key={mapKey}
               center={center} 
               zoom={15} 
               style={{ height: '100%', width: '100%' }}
               className="z-10"
+              scrollWheelZoom={false}
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
