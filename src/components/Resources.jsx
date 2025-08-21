@@ -1,5 +1,5 @@
 import { PlayIcon, BookOpenIcon, VideoCameraIcon } from '@heroicons/react/24/outline';
-import filmExport16 from '../assets/images/film_city_texture.jpg';
+import filmExport16 from '../assets/images/film_city_texture.jpeg';
 
 const Resources = () => {
   const youtubeVideos = [

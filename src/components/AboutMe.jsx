@@ -1,9 +1,9 @@
 import { UserCircleIcon, CameraIcon, CodeBracketIcon, HeartIcon } from '@heroicons/react/24/outline';
-import profilePhoto from '../assets/images/profile.jpg';
-import passengerOnPlum from '../assets/images/plum_street_passenger.jpg';
-import cbr06319 from '../assets/images/historic_lancaster_building.jpg';
-import cbr09867 from '../assets/images/street_candid_moment.jpg';
-import part2 from '../assets/images/city_life_documentary.jpg';
+import profilePhoto from '../assets/images/profile.jpeg';
+import passengerOnPlum from '../assets/images/plum_street_passenger.jpeg';
+import cbr06319 from '../assets/images/historic_lancaster_building.jpeg';
+import cbr09867 from '../assets/images/street_candid_moment.jpeg';
+import part2 from '../assets/images/city_life_documentary.jpeg';
 
 const AboutMe = () => {
   const myWork = [

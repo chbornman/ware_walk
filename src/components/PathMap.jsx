@@ -4,11 +4,11 @@ import { MapIcon, BuildingLibraryIcon, PaintBrushIcon, CameraIcon } from '@heroi
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
 import L from 'leaflet';
-import americanYard from '../assets/images/urban_backyard.jpg';
-import cbr03273 from '../assets/images/brick_building_facade.jpg';
-import filmExport121 from '../assets/images/film_street_scene.jpg';
-import cbr03364 from '../assets/images/downtown_intersection.jpg';
-import janEcn from '../assets/images/winter_street_portrait.jpg';
+import americanYard from '../assets/images/urban_backyard.jpeg';
+import cbr03273 from '../assets/images/brick_building_facade.jpeg';
+import filmExport121 from '../assets/images/film_street_scene.jpeg';
+import cbr03364 from '../assets/images/downtown_intersection.jpeg';
+import janEcn from '../assets/images/winter_street_portrait.jpeg';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({

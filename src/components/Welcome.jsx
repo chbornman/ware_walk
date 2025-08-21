@@ -1,8 +1,8 @@
 import { CameraIcon, PaintBrushIcon, LightBulbIcon, AcademicCapIcon } from '@heroicons/react/24/outline';
-import filmExport33 from '../assets/images/film_urban_landscape.jpg';
-import photoWalk from '../assets/images/winter_urban_scene.jpg';
-import curvesImg from '../assets/images/golden_hour_cityscape.jpg';
-import cbr00282 from '../assets/images/morning_light_street.jpg';
+import filmExport33 from '../assets/images/film_urban_landscape.jpeg';
+import photoWalk from '../assets/images/winter_urban_scene.jpeg';
+import curvesImg from '../assets/images/golden_hour_cityscape.jpeg';
+import cbr00282 from '../assets/images/morning_light_street.jpeg';
 
 const Welcome = () => {
   const features = [

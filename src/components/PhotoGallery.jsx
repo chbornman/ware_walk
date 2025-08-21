@@ -1,18 +1,18 @@
 import { PhotoIcon } from '@heroicons/react/24/outline';
-import filmExport114 from '../assets/images/film_urban_landscape.jpg';
-import filmExport121 from '../assets/images/film_street_scene.jpg';
-import cbr03273 from '../assets/images/brick_building_facade.jpg';
-import cbr03364 from '../assets/images/downtown_intersection.jpg';
-import cbr06319 from '../assets/images/historic_lancaster_building.jpg';
-import cbr09867 from '../assets/images/street_candid_moment.jpg';
-import part2 from '../assets/images/city_life_documentary.jpg';
-import rriff from '../assets/images/abstract_urban_pattern.jpg';
-import janEcn1 from '../assets/images/winter_street_portrait.jpg';
-import janEcn2 from '../assets/images/winter_urban_scene.jpg';
-import street from '../assets/images/street_photography.jpg';
-import old645 from '../assets/images/vintage_film_portrait.jpg';
-import freshstart18 from '../assets/images/morning_light_street.jpg';
-import freshstart22 from '../assets/images/golden_hour_cityscape.jpg';
+import filmExport114 from '../assets/images/film_urban_landscape.jpeg';
+import filmExport121 from '../assets/images/film_street_scene.jpeg';
+import cbr03273 from '../assets/images/brick_building_facade.jpeg';
+import cbr03364 from '../assets/images/downtown_intersection.jpeg';
+import cbr06319 from '../assets/images/historic_lancaster_building.jpeg';
+import cbr09867 from '../assets/images/street_candid_moment.jpeg';
+import part2 from '../assets/images/city_life_documentary.jpeg';
+import rriff from '../assets/images/abstract_urban_pattern.jpeg';
+import janEcn1 from '../assets/images/winter_street_portrait.jpeg';
+import janEcn2 from '../assets/images/winter_urban_scene.jpeg';
+import street from '../assets/images/street_photography.jpeg';
+import old645 from '../assets/images/vintage_film_portrait.jpeg';
+import freshstart18 from '../assets/images/morning_light_street.jpeg';
+import freshstart22 from '../assets/images/golden_hour_cityscape.jpeg';
 
 const PhotoGallery = () => {
   const photos = [

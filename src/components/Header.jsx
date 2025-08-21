@@ -1,5 +1,5 @@
 import { SparklesIcon } from '@heroicons/react/24/outline';
-import sueWalk from '../assets/images/architectural_details.jpg';
+import sueWalk from '../assets/images/architectural_details.jpeg';
 
 const Header = () => {
   return (
