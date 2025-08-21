@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+  
+  ::selection {
+    @apply bg-accent text-white;
+  }
+  
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glow-bronze {
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.3);
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-bronze bg-clip-text text-transparent;
+  }
+}
