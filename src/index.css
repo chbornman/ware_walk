@@ -42,4 +42,19 @@
     width: 100% !important;
     height: 100% !important;
   }
+  
+  /* Hide Leaflet routing control container */
+  .leaflet-routing-container {
+    display: none !important;
+  }
+  
+  .leaflet-control-container .leaflet-routing-container {
+    display: none !important;
+  }
+  
+  .leaflet-top.leaflet-right {
+    .leaflet-routing-container {
+      display: none !important;
+    }
+  }
 }

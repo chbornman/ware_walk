@@ -1,9 +1,16 @@
 import { SparklesIcon } from '@heroicons/react/24/outline';
+import sueWalk from '../assets/images/architectural_details.jpg';
 
 const Header = () => {
   return (
-    <header className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-dark snap-section">
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/10 to-transparent"></div>
+    <header id="header" className="relative min-h-screen flex items-center justify-center overflow-hidden snap-section">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${sueWalk})` }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
       <div className="relative px-6 py-20">
         <div className="max-w-6xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 backdrop-blur-sm rounded-full border border-accent/20 animate-fade-in">

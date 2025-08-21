@@ -1,4 +1,5 @@
 import { PlayIcon, BookOpenIcon, VideoCameraIcon } from '@heroicons/react/24/outline';
+import filmExport16 from '../assets/images/film_city_texture.jpg';
 
 const Resources = () => {
   const youtubeVideos = [
@@ -21,17 +22,23 @@ const Resources = () => {
   ];
 
   return (
-    <section className="min-h-screen py-20 md:py-28 px-6 bg-white snap-section">
-      <div className="max-w-7xl mx-auto">
+    <section id="resources" className="min-h-screen py-32 md:py-36 px-6 lg:px-20 xl:px-24 snap-section relative">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url(${filmExport16})` }}
+      >
+        <div className="absolute inset-0 bg-black/75"></div>
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
             <VideoCameraIcon className="w-12 h-12 text-amber-600" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Learning <span className="text-gradient">Resources</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-bronze mx-auto mb-6"></div>
-          <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+          <p className="text-lg text-neutral-200 max-w-3xl mx-auto">
             Essential videos to prepare you for your photography journey
           </p>
         </div>
@@ -54,7 +61,7 @@ const Resources = () => {
                       className="w-full h-full"
                     ></iframe>
                   </div>
-                  <div className="p-6 bg-gradient-to-br from-neutral-50 to-white">
+                  <div className="p-6 bg-white/95 backdrop-blur-sm">
                     <div className="flex items-start gap-3">
                       <PlayIcon className="w-5 h-5 text-amber-600 mt-1 flex-shrink-0" />
                       <div>
@@ -70,7 +77,7 @@ const Resources = () => {
           </div>
         </div>
 
-        <div className="mt-20 p-10 bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl border border-amber-200">
+        <div className="mt-20 p-10 bg-white/90 backdrop-blur-sm rounded-3xl border border-white/20">
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-neutral-900 mb-4">Ready to Start Your Journey?</h3>
             <p className="text-neutral-600 max-w-2xl mx-auto">
